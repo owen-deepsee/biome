@@ -18,6 +18,17 @@ Read our [guidelines for writing a good changelog entry](https://github.com/biom
 
 ### Analyzer
 ### CLI
+### Configuration
+### Editors
+### Formatter
+### JavaScript APIs
+### Linter
+### Parser
+### VSCode
+
+## 1.1.0 (2023-09-05)
+
+### CLI
 
 #### Enhancements
 
@@ -31,8 +42,12 @@ Read our [guidelines for writing a good changelog entry](https://github.com/biom
 
 ### Configuration
 ### Editors
-### Formatter
-### JavaScript APIs
+
+#### Bug fixes
+
+- The LSP now uses its own socket and won't rely on Rome's socket. This fixes some cases where users were seeing
+multiple servers in the `rage` output.
+
 ### Linter
 
 #### Enhancements
@@ -154,11 +169,6 @@ Read our [guidelines for writing a good changelog entry](https://github.com/biom
 - Fix [rome#4616](https://github.com/rome/tools/issues/4616)
 
   Previously [noUnreachableSuper](https://biomejs.dev/linter/rules/no-unreacheable-super/) reported valid codes with complex nesting of control flow structures.
-
-
-### Parser
-### VSCode
-
 
 ## 1.0.0 (2023-08-28)
 
